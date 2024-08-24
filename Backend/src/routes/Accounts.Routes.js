@@ -1,8 +1,8 @@
 import { Router } from "express";
-import { accountDetails } from "../controllers/Accounts.Controller";
+import { accountDetails } from "../controllers/Accounts.Controllers.js";
 
 const router = Router();
 
-router.route("/accountDetails").get(accountDetails);
+router.route("/accountDetails").post(accountDetails);
 
 export default router;
