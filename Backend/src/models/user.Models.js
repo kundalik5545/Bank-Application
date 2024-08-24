@@ -2,10 +2,10 @@ import mongoose, { Schema } from "mongoose";
 
 const userSchema = new mongoose.Schema(
   {
-    userID: {
-      type: Number,
-      unique: true,
-    },
+    // userID: {
+    //   type: Number,
+    //   unique: true,
+    // },
     firstName: {
       type: String,
       required: true,
@@ -25,10 +25,9 @@ const userSchema = new mongoose.Schema(
       unique: true,
     },
     dob: {
-      type: date,
-      required: true,
+      type: Date,
     },
-    username: {
+    userName: {
       type: String,
       required: true,
       lowercase: true,
@@ -40,7 +39,6 @@ const userSchema = new mongoose.Schema(
     },
     avatar: {
       type: String, //From cloudinary url
-      required: true,
     },
     accountID: {
       type: Schema.Types.ObjectId,
