@@ -7,19 +7,19 @@ const accountSchema = new mongoose.Schema(
       required: true,
     },
     bankID: {
-      type: mongoose.Types.ObjectId,
+      type: Schema.Types.ObjectId,
       ref: "Bank",
     },
     loanID: {
-      type: mongoose.Types.ObjectId,
+      type: Schema.Types.ObjectId,
       ref: "Loan",
     },
     cardID: {
-      type: mongoose.Types.ObjectId,
+      type: Schema.Types.ObjectId,
       ref: "Card",
     },
     balanceID: {
-      type: mongoose.Types.ObjectId,
+      type: Schema.Types.ObjectId,
       ref: "Balance",
     },
     accountType: {
